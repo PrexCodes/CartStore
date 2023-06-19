@@ -6,8 +6,10 @@ mongoose.connect(dburl)
 
 mongoose.connection.on("open", ()=>{
     console.log("")
-    console.log("Database is Connected")
+    console.log("Database is Connected", )
 }).once("error", ()=>{
-    console.log('An error ');
+    console.log('An error occured');
     
 })
+
+export default mongoose
